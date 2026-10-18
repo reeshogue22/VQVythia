@@ -1,5 +1,41 @@
+# Vendored from Ranger21 (https://github.com/lessw2020/Ranger21), Apache-2.0; see LICENSE.ranger21.
+# Changes: the class is renamed Ranger21 -> Ranger.
 
+# Ranger21 - @lessw2020  and @NestorDemeure
+# with contributions from:
+# @BrianPugh
+# @Kayuksel
+# @TheZothen
 
+# core components based on:
+
+# MADGRAD: https://arxiv.org/abs/2101.11075
+
+# warmup:  https://arxiv.org/abs/1910.04209v3
+
+# stable weight decay: https://arxiv.org/abs/2011.11152v3
+
+# Gradient Centralization: https://arxiv.org/abs/2004.01461v2
+
+# positive negative momentum:  https://arxiv.org/abs/2103.17182
+
+# adaptive gradient clipping: https://arxiv.org/abs/2102.06171)
+#   big thanks to @kayuksel for suggestion to include agc, and initial code,
+#   @lucidrains and @rwightman for additional code impl reference
+
+# softplus transformation to denom:  https://arxiv.org/abs/1908.00700
+
+# lookahead:
+# Lookahead Optimizer: https://arxiv.org/abs/1907.08610
+
+# norm loss: https://arxiv.org/abs/2103.06583v1
+# big thanks to Theodoros Georgiou for TF code implementation, and he and team for inventing norm loss
+
+# flat lr + cosine decay: original work 2019 (fastai team)
+
+# Chebyshev fractal steps:
+
+# This space for rent - send in your improvements!
 
 import torch
 import torch.optim as TO
